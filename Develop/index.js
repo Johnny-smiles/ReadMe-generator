@@ -28,7 +28,7 @@ const writeFile = answers => {
 // function call to initialize program
 
 
-const init = (answers) => {
+const init = () => {
  return inquirer.prompt([
         {
             type: 'input',
@@ -71,7 +71,9 @@ const init = (answers) => {
          }        
     ])
     .then(answers => {
+        console.log("==============")
         console.log(answers)
+        console.log("==============")
     });
  };
 
